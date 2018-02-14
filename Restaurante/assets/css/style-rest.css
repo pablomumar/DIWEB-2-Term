@@ -9,16 +9,17 @@
 }
 
 footer{
-    background-color: #999999;
+    background-color: #b3b3b3;
     border-top: 2px #4d4d4d solid;
 }
 
 .footer-up{
+	background-color: #999999;
     border-bottom: 2px #808080 solid;
 }
 
 .footer-copyright{
-    background-color: #808080;
+    background-color: #737373;
     border-top: 1px #4d4d4d solid;
 }
 
