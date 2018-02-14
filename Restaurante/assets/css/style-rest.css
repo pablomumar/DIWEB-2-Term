@@ -105,115 +105,15 @@ img {
 	max-width: 100%;
 }
 /*	Section	==================================================*/
-
-.active-section {
-	top:0px;
-}
 .navbar.active-section {
 	top:0 !important;
-}
-.section-title {
-	text-transform:uppercase;
-	font-size:30px;
-	letter-spacing:5px;
-}
-.whitecolor {
-	color: #fff;
-}
-/*	Button & Label	==================================================*/
-.alert {
-	color:#FFF;
-	border:none;
-}
-[class^="alert-"] .alert-link,[class*=" alert-"] .alert-link {
-	color:#FFF;
-	font-weight:300;
-	text-decoration:underline;
-}
-.btn,.label {
-	border-radius:0px;
-	-moz-border-radius:0px;
-	-webkit-border-radius:0px;
-	-moz-transition:all .2s;
-	-o-transition:all .2s;
-	-webkit-transition:all .2s;
-	transition:all .2s;
-}
-.btn {
-	font-weight:400;
-	text-transform:uppercase;
-	font-size:13px;
-	letter-spacing:3px;
-}
-
-/*	Tab & Collapse Skin	==================================================*/
-.tab-pane {
-	padding:15px 0;
-	margin-bottom:5px;
-}
-.nav-tabs {
-	border-bottom-color:#ecf0f1;
-}
-.nav-tabs>li>a {
-	padding:10px 0;
-	margin-right:30px;
-	color:inherit;
-	font-size:16px;
-	border:none;
-	border-bottom:1px solid rgba(255,255,255,0);
-}
-.nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
-	background:transparent;
-	border:none;
-	border-color:rgba(255,255,255,0);
-}
-.nav>li>a:hover,.nav>li>a:focus {
-	background-color:#ecf0f1;
-}
-.nav-tabs>li>a:hover,.nav-tabs>li>a:focus {
-	color:#1abc9c;
-	background:transparent;
-}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
-	background:transparent;
-	border:none;
-	color:#1abc9c;
-	border-bottom:1px solid #1abc9c;
-}
-.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
-	background-color:#1abc9c;
-}
-.nav .caret,.nav a:hover .caret {
-	border-top-color:#1abc9c;
-	border-bottom-color:#1abc9c;
-}
-.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus {
-	background-color:#1abc9c;
 }
 
 /*	Header	==================================================*/
 #header {
-	box-shadow:0 0 5px rgba(0,0,0,.05);
-	-webkit-box-shadow:0 0 5px rgba(0,0,0,.05);
-	-moz-box-shadow: 0 0 5px rgba(0,0,0,.05);
 	border-bottom: 5px #444 double;
 }
 
-/*	Parallax Background	==================================================*/
-#parallax {
-	height:100%;
-	width:100%;
-	top:0;
-	position:fixed;
-	background-image: none; /* Meter imagen de inicio */
-	background-position:center center;
-	background-repeat:no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	z-index: -100;
-}
 /*	Navbar	==================================================*/
 .navbar-inverse .navbar-brand {
 	padding:30px 15px;
@@ -410,29 +310,6 @@ img {
     position: relative;
   }
 
-.parallax.section .container{
-	position: relative;
-	z-index: 4;
-}
-.justtitle {
-	margin-top:80px;
-}
-.parallax {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	overflow: hidden;
-	z-index: 1;	
-	color:#fff;
-}
-.parallax-overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 2;
-}
 /*	Responsive	==================================================*/ 
 @media (max-width:991px) {
 	.service-box {
@@ -447,10 +324,6 @@ img {
 	}
 }
 @media (max-width:767px) {
-	.section,.parallax.section .container {
-					padding-top:30px;
-					padding-bottom:30px;
-	}
 	.service-box,.img-responsive,.carousel {
 					margin-bottom:30px;
 	}
@@ -490,10 +363,6 @@ img {
 	}
 	h6 {
 					font-size:14px;
-	}
-
-	.section {
-					padding:60px 0;
 	}
 
 	.service-box,.img-responsive,.carousel {
