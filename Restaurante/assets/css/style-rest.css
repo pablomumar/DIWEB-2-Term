@@ -161,16 +161,12 @@ footer{
 /* Platos =====================================
 ==================================================*/
 .articulo-platoInd{
-	min-height: 22vh;
-	margin-top: 3vh;
+	margin-top: 1.5vh;
+    margin-right: 5px;
+    margin-left: 5px;
 	background-color: #f8f8f8;
-	border: 1px black solid;
-	border-radius: 10%;
-	padding: 2% 5%;
-}
-
-.titulo-bebida{
-	margin-top: 7vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 1% 2%;
 }
 
 .platos{
@@ -180,6 +176,15 @@ footer{
 
 .platos p{
 	font-size: 13px;
+}
+
+.titulo-palo{
+    margin-top: 7vh;
+}
+
+.conjunto-platos{
+    display: flex;
+    justify-content: center;
 }
 
 /* Platos =====================================
@@ -389,12 +394,10 @@ img {
 /*	Responsive	==================================================*/
 @media (max-width: 500px){
 	.articulo-platoInd{
-		min-height: 25vh;
-		margin-top: 3vh;
-		background-color: #f8f8f8;
-		border: 1px black solid;
-		border-radius: 16%;
-		padding: 2% 7%;
+        margin-top: 1.5vh;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1% 2%;
 	}
 }
 
@@ -409,13 +412,16 @@ img {
 }
 @media (max-width:767px) {
 	.articulo-platoInd{
-		min-height: 19vh;
-		margin-top: 3vh;
-		background-color: #f8f8f8;
-		border: 1px black solid;
-		border-radius: 16%;
-		padding: 2% 7%;
+        min-height: 10vh;
+        margin-top: 1.5vh;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1% 3%;
 	}
+
+    .conjunto-platos{
+        display: inherit;
+    }
 
 	.desaparece{
 		display:none;
