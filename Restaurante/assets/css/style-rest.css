@@ -1,5 +1,9 @@
+/* Main page =====================================
+==================================================
+ */
+
 .marcadores{
-	color: #999999;
+	color: #FFFFFF;
 }
 
 .title-welcome {
@@ -8,9 +12,81 @@
 	text-transform:uppercase;
 }
 
+.descripcion{
+    background-color: #fff;
+    width: 100%;
+    padding: 6vh 0;
+}
+
+.carta-reserva{
+    background-image: url("../img/rest2-bg.jpg");
+    height: 55vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center center !important;
+}
+
+.carta, .reserva{
+    height: 50vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+
+}
+
+.reserva{
+
+}
+
+.reserva h3, .carta h3{
+    color: #333;
+    text-align: center;
+}
+
+.reserva button, .carta button{
+    color: #333;
+    background-color: transparent;
+    border: 2px #333 solid;
+    font-weight: bold;
+}
+
+.reserva button a, .carta button a{
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/* General =========================================
+====================================================
+ */
+
+.fondo-main{
+    background: url("../img/Fondo main.jpg") #e6e6e6;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center center !important;
+}
+
+.push{
+	height: 20vh;
+}
+
 footer{
     background-color: #b3b3b3;
-    border-top: 2px #4d4d4d solid;
+    border-top: 1px #4d4d4d solid;
 }
 
 .footer-up{
@@ -23,14 +99,14 @@ footer{
     border-top: 1px #4d4d4d solid;
 }
 
-.flex{
+.flex-inline{
     width: 100%;
     display: inline-flex;
     flex-direction: row;
     align-content: space-around;
 }
 
-.flex a, .flex a:hover, .flex a:focus{
+.flex-inline a, .flex-inline a:hover, .flex-inline a:focus{
     font-size: 3.5vh;
     margin: auto;
     color: #b38600;

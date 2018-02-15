@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Proyecto 2 Term">
+    <meta name="author" content="Pablo Muñoz Martin">
     <title>Restaurante</title>
 
     <!-- Styles -->
@@ -39,21 +39,21 @@
         <!-- Menu navegación -->
         <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
             <ul class="nav navbar-nav">
-                <li><a href="../Restaurante/index.html">Inicio</a></li>
-                <li><a href="#">Platos</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Comentarios</a></li>
-                <li><a href="#">Localización</a></li>
+                <li><a href="../Restaurante/Subpaginas/Platos.html">Platos</a></li>
+                <li><a href="../Restaurante/Subpaginas/Reserva.html">Reserva</a></li>
+                <li><a href="../Restaurante/Subpaginas/Galeria.html">Galería</a></li>
+                <li><a href="../Restaurante/Subpaginas/Comentarios.html">Comentarios</a></li>
+                <li><a href="../Restaurante/Subpaginas/Localizacion.html">Localización</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <!-- Body Secciones de Inicio -->
-<div class="wrapsection">
+<div class="wrapsection fondo-main">
     <div class="container">
         <div class="row">
-            <h1 class="typewrite title-welcome" data-period="2500" data-type='[ "Bienvenido al Restaurante", "¡Mira, convencete y reserva!", "El restaurante de todos" ]'>
+            <h1 class="typewrite title-welcome" data-period="2500" data-type='["Bienvenido al Restaurante", "¡Mira, convencete y reserva ya!", "El restaurante de todos" ]' style="font-family: 'Gabriola'; font-size: 8.5vh; font-weight: bold">
                 <span class="wrap"></span>
             </h1>
         </div>
@@ -88,21 +88,53 @@
     </div>
 </div>
 
+<!-- Ver carta, descripcion reserva y localizacion -->
+<div class="container-fluid descripcion">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h2>¿Qué ofrecemos?</h2>
+                <p>Posiblemente la terraza mas elegante de Valencia con un ambiente selecto . Situada en el corazón de la ciudad , junto a la plaza de la Reina.Petit Bistro terrace, se encuentra en la azotea del nuevo apartahotel creado recientemente por Valencia Luxury, quienes con su equipo de interioristas han hecho un sueño realidad sobre un proyecto muy novedoso en Valencia y bastante mas introducido en ciudades como Madrid o Barcelona. Petit Bistro terrace , cuenta con una impresionante  terraza con dos ambientes diferenciados.
+                    La zona lounge , decorada  con una gran  pérgola ajardinada  con sofás donde poder tomar una copa plácidamente disfrutando del buen clima de Valencia ,y el resto de terraza con mesas donde poder comer o cenar  con unas formidables vistas a la cúpula de la catedral y al Miguelete.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid carta-reserva">
+    <div class="container">
+        <div class="row">
+            <div class="carta col-md-6 col-sm-6 col-xs-12">
+                <h3> Revisa nuestros menús y platos</h3>
+                <button type="button" class="btn"><a href="../Restaurante/Subpaginas/Platos.html">Ver carta</a></button>
+            </div>
+            <div class="reserva col-md-6 col-sm-6 col-xs-12">
+                <h3> Reserva ahora </h3>
+                <button type="button" class="btn"><a href="../Restaurante/Subpaginas/Reserva.html">Reserva</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Push
+<div class="push">
+</div> -->
+
 <!-- Footer -->
 <footer class="page-footer center-on-small-only">
     <div class="container-fluid">
         <div class="row footer-up">
 
-            <div class="col-md-12 flex">
+            <div class="col-md-12 flex-inline">
 
                 <div class="left-social">
                     <h6 class="mb-0">Echale un ojo a nuestras redes sociales: </h6>
                 </div>
 
-                <div class="social flex">
-                    <a class="fa fa-facebook white-text"></a>
-                    <a class="fa fa-twitter white-text"></a>
-                    <a class="fa fa-instagram white-text"></a>
+                <div class="social flex-inline">
+                    <a class="fa fa-facebook white-text" href=""></a>
+                    <a class="fa fa-twitter white-text" href=""></a>
+                    <a class="fa fa-instagram white-text" href=""></a>
                     <a class="icons-sm pin-ic"><i class="fa fa-pinterest fa-lg white-text"> </i></a>
                 </div>
 
