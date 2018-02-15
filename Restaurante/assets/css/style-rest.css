@@ -1,6 +1,5 @@
 /* Main page =====================================
-==================================================
- */
+==================================================*/
 
 .marcadores{
 	color: #FFFFFF;
@@ -13,7 +12,7 @@
 }
 
 .descripcion{
-    background-color: #fff;
+    background-color: #f8f8f8;
     width: 100%;
     padding: 6vh 0;
 }
@@ -71,6 +70,10 @@
 ====================================================
  */
 
+.push{
+	margin-bottom: 8vh;
+}
+
 .fondo-main{
     background: url("../img/Fondo main.jpg") #e6e6e6;
     -webkit-background-size: cover;
@@ -78,10 +81,6 @@
     -o-background-size: cover;
     background-size: cover;
     background-position:center center !important;
-}
-
-.push{
-	height: 20vh;
 }
 
 footer{
@@ -128,7 +127,76 @@ footer{
     margin: 4vh auto;
 }
 
+.precio{
+	float: right;
+	font-weight: bold;
+	font-size: 3vh;
+}
 
+.amarillento-text{
+	color: #b38600;
+}
+
+/* Menus =====================================
+==================================================*/
+.articulo-menu{
+	margin-top: 5vh;
+	background-color: #f8f8f8;
+	border: 1px black solid;
+	border-radius: 10%;
+	padding: 2% 8%;
+}
+
+.articulo-menu>ul li {
+	list-style: none;
+}
+
+.fondo-menu{
+	background-image: url("../img/Fondo main.jpg");
+	background-repeat: repeat repeat;
+	padding-bottom: 8vh;
+	padding-top: 2.5vh;
+}
+
+/* Platos =====================================
+==================================================*/
+.articulo-platoInd{
+	min-height: 22vh;
+	margin-top: 3vh;
+	background-color: #f8f8f8;
+	border: 1px black solid;
+	border-radius: 10%;
+	padding: 2% 5%;
+}
+
+.titulo-bebida{
+	margin-top: 7vh;
+}
+
+.platos{
+	background-color: #f8f8f8;
+	height: auto;
+}
+
+.platos p{
+	font-size: 13px;
+}
+
+/* Platos =====================================
+==================================================*/
+.hide-bullets {
+	list-style:none;
+	margin-left: -40px;
+	margin-top:20px;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 100%;
+}
 
 /* ------------------------------------------------------------- */
 body {
@@ -197,8 +265,12 @@ img {
 }
 
 /*	Header	==================================================*/
-#header {
+.header {
 	border-bottom: 5px #444 double;
+}
+
+.submenu{
+	margin-bottom: -2.5vh;
 }
 
 /*	Navbar	==================================================*/
@@ -243,6 +315,12 @@ img {
 #slider {	
 	color:#FFF;
 }
+
+.carousel-inner div img{
+	width: 100%;
+	height: auto;
+}
+
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
 }
@@ -284,25 +362,7 @@ img {
 	-webkit-transition:all .2s;
 	transition:all .2s;
 }
-.carousel-inner blockquote {
-	border:none;
-	text-align:center;
-	padding:40px 10%;
-}
-.carousel-inner blockquote small {
-	font-size:14px;
-	text-transform:uppercase;
-	font-weight:400;
-}
-.carousel-inner blockquote p {
-	font-size:36px;
-}
-.carousel-control .glyphicon {
-	left:50%;
-	margin-top:-10px;
-	margin-left:-10px;
-	font-size:20px;
-}
+
 .carousel-indicators {
 	bottom:-20px;
 }
@@ -326,11 +386,19 @@ img {
     background-color: #e6e6e6;
   }
 
-/*	Responsive	==================================================*/ 
-@media (max-width:991px) {
-	.service-box {
-					margin-bottom:30px;
+/*	Responsive	==================================================*/
+@media (max-width: 500px){
+	.articulo-platoInd{
+		min-height: 25vh;
+		margin-top: 3vh;
+		background-color: #f8f8f8;
+		border: 1px black solid;
+		border-radius: 16%;
+		padding: 2% 7%;
 	}
+}
+
+@media (max-width:991px) {
 	#image img.img-responsive {
 					margin-left:auto;
 					margin-right:auto;
@@ -340,9 +408,23 @@ img {
 	}
 }
 @media (max-width:767px) {
+	.articulo-platoInd{
+		min-height: 19vh;
+		margin-top: 3vh;
+		background-color: #f8f8f8;
+		border: 1px black solid;
+		border-radius: 16%;
+		padding: 2% 7%;
+	}
+
+	.desaparece{
+		display:none;
+	}
+
 	.service-box,.img-responsive,.carousel {
 					margin-bottom:30px;
 	}
+
 	.container {
 					max-width:690px;
 					padding-left:30px;
@@ -351,11 +433,10 @@ img {
 	.navbar-nav>li>a {
 					padding:10px;
 	}
-	.header-button {
-					margin:0;
-	}
-	#hero .herotext {
-					padding: 90px 0px;
+
+	.submenu{
+		display: inline-flex;
+		padding-bottom: 2.5vh;
 	}
 }
 @media (max-width:767px) {
@@ -365,9 +446,7 @@ img {
 	h1 {
 					font-size:28px;
 	}
-	h2,.carousel-inner blockquote p {
-					font-size:24px;
-	}
+
 	h3 {
 					font-size:20px;
 	}
