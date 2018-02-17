@@ -1,3 +1,12 @@
+/* Funcion de alert -----------------------------*/
+function Enviar() {
+    if($('#nombre').val().length === 0 || $('#numero').val().length < 9 || $('#fecha').val().length === 0){
+        alert('Lo sentimos. Faltan campos por rellenar. No se ha podido realizar la reserva')
+    } else {
+        alert('¡¡¡Reserva realizada con éxito!!!');
+    }
+}
+
 /* Animacion de inicio -------------------------- */
 
 var TxtType = function(el, toRotate, period) {
